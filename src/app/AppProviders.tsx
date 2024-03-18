@@ -14,7 +14,7 @@ import { Toaster as HotToaster } from 'react-hot-toast';
 import ReactNoSSR from 'react-no-ssr';
 import { Toaster as SonnerToaster } from 'sonner';
 import { ThemeProvider } from './ThemeProvider';
-import { useMyReportWebVitals } from './reportWebVitals';
+ 
 
 /**
  ** Inspiration from here
@@ -44,7 +44,7 @@ export function AppProviders({
 }: {
   children: React.ReactNode;
 }) {
-  useMyReportWebVitals();
+
   return (
     <>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
